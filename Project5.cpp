@@ -75,24 +75,24 @@
 
 
 
-#include <cmath>
-#include <iostream>
-#include <string>
-using namespace std;
+// #include <cmath>
+// #include <iostream>
+// #include <string>
+// using namespace std;
 
 
 
 
 
-int add(int a, int b){
-  return a+b; 
-}
+// int add(int a, int b){
+//   return a+b; 
+// }
 
 
-void fun(string fun){
-  cout<<"Are you having fun "<<fun<<"!";
-}
-int main(){
+// void fun(string fun){
+//   cout<<"Are you having fun "<<fun<<"!";
+// }
+// int main(){
 
   // Addition of two numbers with the help of functions,
 
@@ -128,14 +128,27 @@ int main(){
   // fun("Atharva");     // This works.
 
 
-  ''
+ 
+  
+  
 
+//   return 0;
+// }
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+  cout<<"Hello world!";
   return 0;
+  
 }
-
-
-
-
 
 
 
