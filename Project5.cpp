@@ -142,10 +142,17 @@
 
 
 #include <iostream>
-using namespace std;
+#include <string>
 
+using namespace std;
+void siro(string name){
+  cout<<"Welcome "<<name<<"!";
+
+}
 int main(){
-  cout<<"Hello world!";
+  cout<<"Hello world!";     //This is how normally Stuff work. I already know function so well I'II just write and test stuff nothing to explain.
+  cout<<endl; 
+  siro("Atharva");
   return 0;
   
 }
