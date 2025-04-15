@@ -153,6 +153,7 @@ void siro(string name){
 
 void naturalSqura(int num);   //We are declaring this here but the code is below the main fuction. This is done to avoid error.
 void radNCircum(int radius);
+void prime(int a, int b);
 
 int main(){
   // cout<<"Hello world!";     //This is how normally Stuff work. I already know function so well I'II just write and test stuff nothing to explain.
@@ -180,6 +181,32 @@ int main(){
 
   // Printing all the odd number till the number given.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Given two number, writing a function to print all the prime numbers between them.
+  int num1;
+  int num2;
+
+  cout<<"Enter first smaller number";
+  cin>>num1;
+  cout<<endl;
+  cout<<"Enter second and bigger number";
+  cin>>num2;
+  prime(num1,num2);
+
   return 0;
   
 }
@@ -198,7 +225,6 @@ int main(){
 // void radNCircum(int radius){
 //   cout<<"Circumference of circle : "<<(2*3.14*radius)<<endl;
 //   cout<<"Area of the circle : "<< (3.14*(radius*radius))<<endl;
-
 // }
 
 
@@ -206,6 +232,17 @@ int main(){
 
 
 
+
+// Given two number, writing a function to print all the prime numbers between them. (HARD)
+
+void prime(int a, int b){
+  int z = 0;
+  while(z<=a)
+    for(int i =a; i<=b; i++){
+      if(i%z==0){}
+    }cout<<a<<endl
+  }
+}
 
 
 
