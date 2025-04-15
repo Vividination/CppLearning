@@ -143,19 +143,71 @@
 
 #include <iostream>
 #include <string>
+#include <math.h>
 
 using namespace std;
 void siro(string name){
   cout<<"Welcome "<<name<<"!";
-
 }
+
+
+void naturalSqura(int num);   //We are declaring this here but the code is below the main fuction. This is done to avoid error.
+void radNCircum(int radius);
+
 int main(){
-  cout<<"Hello world!";     //This is how normally Stuff work. I already know function so well I'II just write and test stuff nothing to explain.
-  cout<<endl; 
-  siro("Atharva");
+  // cout<<"Hello world!";     //This is how normally Stuff work. I already know function so well I'II just write and test stuff nothing to explain.
+  // cout<<endl; 
+  // siro("Atharva");
+
+
+
+
+  // function to print the squres of the first five natural numbers.
+  // int inp;
+  // cout<< "Enter a number : ";
+  // cin>>inp;
+  // naturalSqura(inp);
+
+
+  // With radius as input finding the area and circumfrence of the circle.
+  // int inp;
+  // cout<< "Enter a number : ";
+  // cin>>inp;
+  // radNCircum(inp);
+
+  
+
+
+  // Printing all the odd number till the number given.
+
   return 0;
   
 }
+
+
+
+// function to print the squres of the first five natural numbers.
+// void naturalSqura(int num){
+//   for(int i = 1; i<=num; i++ ){
+//     cout<<(i)*(i)<<endl;
+//   }
+// }
+
+
+// With radius as input finding the area and circumfrence of the circle.
+// void radNCircum(int radius){
+//   cout<<"Circumference of circle : "<<(2*3.14*radius)<<endl;
+//   cout<<"Area of the circle : "<< (3.14*(radius*radius))<<endl;
+
+// }
+
+
+
+
+
+
+
+
 
 
 
