@@ -1,7 +1,7 @@
 // 1)Converting binary number into decimal number
 // 2)Conversion of decimal to binary number
 // 3)Functions and standard library functions
-
+// 4)Scope of variables in c++ (IDK what this is going to do it)
 
 
 
@@ -141,21 +141,21 @@
 
 
 
-#include <iostream>
-#include <string>
-#include <math.h>
+// #include <iostream>
+// #include <string>
+// #include <math.h>
 
-using namespace std;
-void siro(string name){
-  cout<<"Welcome "<<name<<"!";
-}
+// using namespace std;
+// void siro(string name){
+//   cout<<"Welcome "<<name<<"!";
+// }
 
 
-void naturalSqura(int num);   //We are declaring this here but the code is below the main fuction. This is done to avoid error.
-void radNCircum(int radius);
-void prime(int a, int b);
+// void naturalSqura(int num);   //We are declaring this here but the code is below the main fuction. This is done to avoid error.
+// void radNCircum(int radius);
+// void prime(int a, int b);
 
-int main(){
+// int main(){
   // cout<<"Hello world!";     //This is how normally Stuff work. I already know function so well I'II just write and test stuff nothing to explain.
   // cout<<endl; 
   // siro("Atharva");
@@ -197,19 +197,19 @@ int main(){
 
 
   // Given two number, writing a function to print all the prime numbers between them.
-  int num1;
-  int num2;
+//   int num1;
+//   int num2;
 
-  cout<<"Enter first smaller number";
-  cin>>num1;
-  cout<<endl;
-  cout<<"Enter second and bigger number";
-  cin>>num2;
-  prime(num1,num2);
+//   cout<<"Enter first smaller number : ";
+//   cin>>num1;
+//   cout<<endl;
+//   cout<<"Enter second and bigger number : ";
+//   cin>>num2;
+//   prime(num1,num2);
 
-  return 0;
+//   return 0;
   
-}
+// }
 
 
 
@@ -235,18 +235,55 @@ int main(){
 
 // Given two number, writing a function to print all the prime numbers between them. (HARD)
 
-void prime(int a, int b){
-  int z = 0;
-  while(z<=a)
-    for(int i =a; i<=b; i++){
-      if(i%z==0){}
-    }cout<<a<<endl
-  }
+// void prime(int a, int b){
+//   int z = 0;
+//   for(int i = a; i<=b; i++){
+//       while(z<i){
+//         if(i%z==0){
+//         break;
+//       }
+//       cout<<a<<endl;
+//       z++;
+//     }
+//   }
+// }
+        // I can't men bye
+
+
+
+
+
+
+
+
+
+// 4)Scope of variables in c++ (IDK what this is going to do it)
+// Its basically visibility of the variable.--: what all areas are there for where we can access that variable.
+// We have 3 types of scopes in c++
+// 1)Global --- Varibales that are outside all blocks and function(even main) in a program, and they can be accessed anywhere in the program
+// 2)Function
+// 3)Block   
+// usually 2nd and 3rd are similar so we combine them and sometimes say "local scope".
+
+
+
+#include<iostream>
+
+using namespace std;
+// Global scope
+int age = 28;
+string name = "siro";
+
+
+void pri(string a){
+  cout<<a<<endl;
 }
+int main(){
+  pri(name);
+  name = "Atharva";
+  cout<<name<<endl;
 
-
-
-
+}
 
 
 
