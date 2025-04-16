@@ -2,6 +2,7 @@
 // 2)Conversion of decimal to binary number
 // 3)Functions and standard library functions
 // 4)Scope of variables in c++ (IDK what this is going to do it)
+// 5)Formal parameter and actual parameter
 
 
 
@@ -260,31 +261,35 @@
 // 4)Scope of variables in c++ (IDK what this is going to do it)
 // Its basically visibility of the variable.--: what all areas are there for where we can access that variable.
 // We have 3 types of scopes in c++
-// 1)Global --- Varibales that are outside all blocks and function(even main) in a program, and they can be accessed anywhere in the program
+// 1)Global --- Varibales that are outside all blocks(loops) and function(even main) in a program, and they can be accessed anywhere in the program
 // 2)Function
 // 3)Block   
-// usually 2nd and 3rd are similar so we combine them and sometimes say "local scope".
+// usually 2nd and 3rd are similar so we combine them and sometimes say "local scope"
+    // Local scope -->variables that are inside a function block and can be accessed inside it only. They are unknown entities outside.
 
 
 
-#include<iostream>
+// #include<iostream>
 
-using namespace std;
-// Global scope
-int age = 28;
-string name = "siro";
-
-
-void pri(string a){
-  cout<<a<<endl;
-}
-int main(){
-  pri(name);
-  name = "Atharva";
-  cout<<name<<endl;
-
-}
+// using namespace std;
+// // Global scope
+// int age = 28;
+// string name = "siro";
 
 
+// void pri(string a){
+//   cout<<a<<endl;
+// }
+// int main(){
+//   pri(name);
+//   name = "Atharva";   //Value of name updated
+//   cout<<name<<endl;
+
+// }
 
 
+
+
+
+
+// 
