@@ -3,6 +3,7 @@
 // 3)Functions and standard library functions
 // 4)Scope of variables in c++ (IDK what this is going to do it)
 // 5)Formal parameter and actual parameter
+// 6)Pass by value and pass by reference
 
 
 
@@ -289,7 +290,43 @@
 
 
 
+#include<iostream>
+using namespace std;
+
+
+// 5)Formal parameter and actual parameter
+// Formal parameter ->  the placeholders for values that will be passed into a function when it's called.
 
 
 
-// 
+void nat(int a, int b){  
+  for(int i = a; i<=b;i++){
+    cout<<i<<endl;
+  }
+  
+}
+
+// Here int a and int b will be formal parameters.
+// a and b are temp values and hence place holders.
+
+
+// Actual Parameter:  the values (expressions) that are passed in the cal
+
+int main(){
+  int x = 2;
+  int y = 10;
+  nat(x,y);   // these areactual parameters caues they are used in the calling of the function.
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
