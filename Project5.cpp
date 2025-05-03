@@ -4,6 +4,7 @@
 // 4)Scope of variables in c++ (IDK what this is going to do it)
 // 5)Formal parameter and actual parameter
 // 6)Pass by value and pass by reference
+// 7)andpersand operator. Very good very good. haha ha ha---> my boards results are coming out the few days. I'm dead. I don't know what to expect tbh.
 
 
 
@@ -295,21 +296,108 @@
 
 
 
-
-
-
-
-
 #include <iostream>
 using namespace std;
+
+
+
+
+
+
+void valueChange (int a, int b){   //Here a , b are formal parameters.
+  a = 200;
+  b=50;
+
+
+}
+
+void changeValue2(int &a, int &b){
+  a = 20;
+  b = 50;
+}
+
+
+
+int sum(float a ,float b = 0, float c  = 0){
+  return a+b+c;
+}
+
 int main(){
   cout<<endl;
   cout<<"Hello world"<<endl;
+
   int a = 5;
-  int &b = a;     //What we here did is used andpercent operator.
+  int &b = a;     //What we here did is used ampersand operator.
                   // So basically when we change or modify the value of a or b the real value changes.\
                   // Irrespective of the other variable. And also its not a copy of the variable in b. 
                   // Same memory location is used for both a and b
+
+  // cout<<b<<endl;  // b = 5;
+  // a++;
+  // cout<<b<<endl;   // b = 6;
+
+  // cout<<&a<<endl;     //This is a way to find the memory address of the varibale &+variable name
+  // cout<<&b<<endl;
+
+
+
+
+  // first of all -> Acual parameter and formal parameters 
+  // int x = 5,y = 6;
+  // valueChange(x,y);   // Here the x,y are actual parameters.
+
+  // Now
+  // cout<<x<<":"<<y<<endl; // The cout put is 5:6 not 200:50; -->see the line 306 we tried to change the value
+                         // but only the copy of the varible is taken to formal parameters from actual parameteres.
+                        // What if we really wanted to change the values of the varible in a funcion with the help of other funcion?
+// The just use andpersand operator 
+// for example;
+
+// int q = 5;
+// int p = 6;
+// changeValue2(p,q);
+// cout<<p<<":"<<q<<endl;  //Now what's the output??
+                      //Its 20:50;
+                      // see the line 313
+// oid changeValue2(int &a, int &b)
+
+// see here &a and &b is used. So the memory address of p = a and q = b has happened. 
+// Both the pair contains the same memory address.
+// So if either of the one changes the value the others's value changes as well
+
+
+
+
+
+
+
+
+
+// One last thing.
+// What if lets say we have a function that does an operation on few variables and returns a value lets name it sum.
+// It takes a certain number of values in its parametres section.
+// what if we are not able to send those required values and want to use the default values insted of the ones not sent.
+// The do this.
+
+
+
+// int sum(float a ,float b = 0, float c  = 0){      --> line 321;
+
+
+int t = 4;
+int r = 3;
+int w = 9;
+int siro = sum(t);    //Not sending other values caues testing stuff.
+cout<<siro<<endl;
+// the answer is 4 caues the defalut value we set were 0 and 0 see for urself --->float b = 0, float c  = 0
+
+siro = sum(t,r,w);
+cout<<siro<<endl;   //The answer is 16 as all the  values were sent, so no need of default operator.
+
 }
+
+
+
+
 
 
