@@ -290,43 +290,26 @@
 
 
 
-#include<iostream>
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
 using namespace std;
-
-
-// 5)Formal parameter and actual parameter
-// Formal parameter ->  the placeholders for values that will be passed into a function when it's called.
-
-
-
-void nat(int a, int b){  
-  for(int i = a; i<=b;i++){
-    cout<<i<<endl;
-  }
-  
-}
-
-// Here int a and int b will be formal parameters.
-// a and b are temp values and hence place holders.
-
-
-// Actual Parameter:  the values (expressions) that are passed in the cal
-
 int main(){
-  int x = 2;
-  int y = 10;
-  nat(x,y);   // these areactual parameters caues they are used in the calling of the function.
-
+  cout<<endl;
+  cout<<"Hello world"<<endl;
+  int a = 5;
+  int &b = a;     //What we here did is used andpercent operator.
+                  // So basically when we change or modify the value of a or b the real value changes.\
+                  // Irrespective of the other variable. And also its not a copy of the variable in b. 
+                  // Same memory location is used for both a and b
 }
-
-
-
-
-
-
-
-
-
-
 
 
